@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "user_details",
+  "info": {
+    "name": "UserDetail"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "email": {
+      "type": "string"
+    }
+  }
+}
