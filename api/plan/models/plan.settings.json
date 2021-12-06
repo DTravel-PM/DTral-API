@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "plans",
   "info": {
-    "name": "Plan"
+    "name": "Plan",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -11,11 +12,18 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "Title": {
+    "title": {
       "type": "string"
     },
     "description": {
       "type": "string"
+    },
+    "userid": {
+      "type": "integer",
+      "required": true
+    },
+    "planid": {
+      "type": "uid"
     }
   }
 }

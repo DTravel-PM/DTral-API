@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "locations",
+  "info": {
+    "name": "Location",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "siteid": {
+      "type": "integer",
+      "unique": true
+    },
+    "sitename": {
+      "type": "string"
+    },
+    "address": {
+      "type": "string"
+    },
+    "rating": {
+      "type": "integer"
+    },
+    "postcount": {
+      "type": "integer"
+    },
+    "commentcount": {
+      "type": "integer"
+    },
+    "owner": {
+      "type": "string"
+    }
+  }
+}

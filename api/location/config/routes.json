@@ -2,56 +2,48 @@
   "routes": [
     {
       "method": "GET",
-      "path": "/plans/GetPlanByUserId/:userid",
-      "handler": "plan.getPlanByUserId",
+      "path": "/locations",
+      "handler": "location.find",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/plans",
-      "handler": "plan.find",
+      "path": "/locations/count",
+      "handler": "location.count",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/plans/count",
-      "handler": "plan.count",
-      "config": {
-        "policies": []
-      }
-    },
-    {
-      "method": "GET",
-      "path": "/plans/:id",
-      "handler": "plan.findOne",
+      "path": "/locations/:id",
+      "handler": "location.findOne",
       "config": {
         "policies": []
       }
     },
     {
       "method": "POST",
-      "path": "/plans",
-      "handler": "plan.create",
+      "path": "/locations",
+      "handler": "location.create",
       "config": {
         "policies": []
       }
     },
     {
       "method": "PUT",
-      "path": "/plans/:id",
-      "handler": "plan.update",
+      "path": "/locations/:id",
+      "handler": "location.update",
       "config": {
         "policies": []
       }
     },
     {
       "method": "DELETE",
-      "path": "/plans/:id",
-      "handler": "plan.delete",
+      "path": "/locations/:id",
+      "handler": "location.delete",
       "config": {
         "policies": []
       }

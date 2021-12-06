@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "tests",
+  "collectionName": "pending_lists",
   "info": {
-    "name": "Location",
+    "name": "PendingList",
     "description": ""
   },
   "options": {
@@ -12,10 +12,17 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "name": {
+    "listid": {
+      "type": "integer",
+      "unique": true
+    },
+    "username": {
       "type": "string"
     },
-    "age": {
+    "articletitle": {
+      "type": "string"
+    },
+    "status": {
       "type": "integer"
     }
   }
