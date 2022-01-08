@@ -5,6 +5,8 @@
  * to customize this controller
  */
 
+var cloudinary = require("../../../config/cloudinary");
+
 module.exports = {
   search: async (ctx) => {
     const { text } = ctx.query;

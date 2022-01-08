@@ -9,6 +9,14 @@
       }
     },
     {
+      "method": "POST",
+      "path": "/plans/AddToPlan",
+      "handler": "plan.AddToPlan",
+      "config": {
+        "policies": []
+      }
+    },
+    {
       "method": "GET",
       "path": "/plans",
       "handler": "plan.find",

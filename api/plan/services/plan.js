@@ -7,18 +7,29 @@
 
 module.exports = {
   getPlanByUserId: async (userid) => {
-    const result = await strapi.query("plan").find({ userid: userid });
+    const result = await strapi.query("plan").find({ username: userid });
 
     if (result) {
-      return result.map((item) => {
-        return {
-          id: item.id,
-          title: item.title,
-          description: item.description,
-          userid: item.userid,
-          planid: item.planid,
-        };
-      });
+      return result;
+    }
+
+    return [];
+  },
+
+  AddToPlan: async (plan) => {
+    const result = await strapi.query("plan").find();
+    console.log("plan,", plan);
+    console.log("re", result);
+    if (
+      result &&
+      result.filter(
+        (e) => e.locationid === plan.locationid && e.username === plan.username
+      ).length > 0
+    ) {
+      return [];
+    } else {
+      console.log("hihi");
+      await strapi.query("plan").create(plan);
     }
 
     return [];

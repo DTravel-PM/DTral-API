@@ -11,4 +11,9 @@ module.exports = {
     const result = await strapi.services.plan.getPlanByUserId(userid);
     return result;
   },
+
+  AddToPlan: async (ctx) => {
+    const result = await strapi.services.plan.AddToPlan(ctx.request.body);
+    return result;
+  },
 };

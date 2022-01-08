@@ -543,6 +543,15 @@
           "owner": {
             "type": "string"
           },
+          "thumbnail": {
+            "type": "string"
+          },
+          "image": {
+            "type": "object"
+          },
+          "description": {
+            "type": "string"
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -570,6 +579,15 @@
             "type": "integer"
           },
           "owner": {
+            "type": "string"
+          },
+          "thumbnail": {
+            "type": "string"
+          },
+          "image": {
+            "type": "object"
+          },
+          "description": {
             "type": "string"
           },
           "published_at": {

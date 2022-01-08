@@ -561,6 +561,18 @@
                 "role": {
                   "type": "string"
                 },
+                "fullname": {
+                  "type": "string"
+                },
+                "website": {
+                  "type": "string"
+                },
+                "address": {
+                  "type": "string"
+                },
+                "phone": {
+                  "type": "string"
+                },
                 "created_by": {
                   "type": "string"
                 },

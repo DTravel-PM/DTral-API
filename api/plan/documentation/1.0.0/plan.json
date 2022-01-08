@@ -68,6 +68,77 @@
         ]
       }
     },
+    "/plans/AddToPlan": {
+      "post": {
+        "deprecated": false,
+        "description": "Create a new record",
+        "responses": {
+          "200": {
+            "description": "response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "foo": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "unexpected error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "summary": "",
+        "tags": [
+          "Plan"
+        ],
+        "requestBody": {
+          "description": "",
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "properties": {
+                  "foo": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/plans": {
       "get": {
         "deprecated": false,
@@ -584,8 +655,7 @@
     "schemas": {
       "Plan": {
         "required": [
-          "id",
-          "userid"
+          "id"
         ],
         "properties": {
           "id": {
@@ -597,11 +667,23 @@
           "description": {
             "type": "string"
           },
-          "userid": {
-            "type": "integer"
-          },
           "planid": {
             "type": "uid"
+          },
+          "date": {
+            "type": "string"
+          },
+          "time": {
+            "type": "string"
+          },
+          "budget": {
+            "type": "string"
+          },
+          "username": {
+            "type": "string"
+          },
+          "locationid": {
+            "type": "integer"
           },
           "published_at": {
             "type": "string",
@@ -610,9 +692,6 @@
         }
       },
       "NewPlan": {
-        "required": [
-          "userid"
-        ],
         "properties": {
           "title": {
             "type": "string"
@@ -620,11 +699,23 @@
           "description": {
             "type": "string"
           },
-          "userid": {
-            "type": "integer"
-          },
           "planid": {
             "type": "uid"
+          },
+          "date": {
+            "type": "string"
+          },
+          "time": {
+            "type": "string"
+          },
+          "budget": {
+            "type": "string"
+          },
+          "username": {
+            "type": "string"
+          },
+          "locationid": {
+            "type": "integer"
           },
           "published_at": {
             "type": "string",

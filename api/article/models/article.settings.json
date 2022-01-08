@@ -52,6 +52,9 @@
       "plugin": "upload",
       "required": false,
       "pluginOptions": {}
+    },
+    "username": {
+      "type": "string"
     }
   }
 }

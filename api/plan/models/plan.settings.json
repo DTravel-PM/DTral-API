@@ -18,12 +18,23 @@
     "description": {
       "type": "string"
     },
-    "userid": {
-      "type": "integer",
-      "required": true
-    },
     "planid": {
       "type": "uid"
+    },
+    "date": {
+      "type": "string"
+    },
+    "time": {
+      "type": "string"
+    },
+    "budget": {
+      "type": "string"
+    },
+    "username": {
+      "type": "string"
+    },
+    "locationid": {
+      "type": "integer"
     }
   }
 }

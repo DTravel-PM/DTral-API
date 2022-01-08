@@ -33,6 +33,15 @@
     },
     "owner": {
       "type": "string"
+    },
+    "thumbnail": {
+      "type": "string"
+    },
+    "image": {
+      "type": "json"
+    },
+    "description": {
+      "type": "string"
     }
   }
 }
